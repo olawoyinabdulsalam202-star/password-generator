@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  backdrop-filter: blur(15px);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  accent-color: #ffb400;
+}
+
+.length-input {
+  margin-bottom: 20px;
+}
+
+.length-input input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-top: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+button {
+  background: #ffb400;
+  color: #1d2671;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #fff;
+  color: #c33764;
+  transform: scale(1.05);
+}
+
+.result-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.result-box input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+}
+
+.result-box button {
+  font-size: 1.5rem;
+  padding: 8px 15px;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.result-box button:hover {
+  background: #ffb400;
+  color: #fff;
+}
+
+.strength {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.strength span {
+  font-weight: 500;
+}
+
+.bar {
+  background: rgba(255, 255, 255, 0.2);
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+#strengthBar {
+  height: 10px;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.5s ease, background 0.5s ease;
+}
+
+#strengthText {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+#message {
+  margin-top: 15px;
+  font-size: 1rem;
+  height: 1.2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
